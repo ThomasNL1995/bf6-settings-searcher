@@ -78,6 +78,9 @@ h1 svg {
 }
 
 /* --- Filter Styling --- */
+#filterToggleButton {
+  display: none; /* Hidden by default, shown on mobile */
+}
 #filterContainer {
   display: flex;
   flex-wrap: wrap;
