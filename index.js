@@ -27,6 +27,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const searchInput = document.getElementById("searchInput");
       const resultsContainer = document.getElementById("resultsContainer");
+      const filterContainer = document.getElementById("filterContainer");
+
+      // Dynamically create filter checkboxes
+      const mainTabs = Object.keys(settingsData);
+      mainTabs.forEach((tab) => {
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.id = `filter-${tab}`;
+        checkbox.className = "filter-checkbox";
+        checkbox.value = tab;
+
+        const label = document.createElement("label");
+        label.htmlFor = `filter-${tab}`;
+        label.className = "filter-label";
+        label.textContent = tab.replace(/_/g, " ");
+
+        filterContainer.appendChild(checkbox);
+        filterContainer.appendChild(label);
+      });
 
       function performSearch() {
         const query = searchInput.value;
