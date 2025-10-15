@@ -1,0 +1,1591 @@
+{
+  "ACCESSIBILITY": {
+    "AUDIO": {
+      "Menu Narration": "OFF",
+      "Subtitles": "ON",
+      "Subtitle Settings": {
+        "Subtitle Text Size": "SMALL",
+        "Subtitle Outline": "ON",
+        "Subtitles Background Opacity": 0,
+        "Subtitles Text Opacity": 80,
+        "Instructor Subtitles": "ON",
+        "Squad Subtitles": "ON",
+        "Friendly Subtitles": "ON",
+        "Show Speaker Name in Subtitles": "ON"
+      },
+      "Master Volume": 100,
+      "Tinnitus SFX Volume": 9,
+      "Tinnitus Relief Frequency": 20000
+    },
+    "GRAPHICS QUALITY SETTINGS": {
+      "Color Profiles": {
+        "Color Presets": "DEFAULT",
+        "Primary Color": "Grey",
+        "Player Color": "Light Green",
+        "Friendly Color": "Blue",
+        "Squad Color": "Green",
+        "Enemy Color": "Orange-Red",
+        "Neutral Color": "Grey",
+        "Accent Color": "Orange",
+        "Soft Armor Color": "Light Blue",
+        "Hard Armor Color": "Purple",
+        "Warning Color": "Orange-Red"
+      },
+      "World Brightness": 36,
+      "Camera Effects": {
+        "World Motion Blur": 0,
+        "Weapon Motion Blur": 0,
+        "Infantry HUD Motion": "ON",
+        "Camera Shake Amount": 50,
+        "Reduce Sprint Camera Bobbing": "ON",
+        "Chromatic Aberration": "OFF",
+        "Infantry Crosshair Projection": "ON"
+      }
+    },
+    "CONTROLS": {
+      "Hold/Toggle": {
+        "Infantry Sprint": "TOGGLE",
+        "Double Tap Forward To Sprint": "OFF",
+        "Crouch Toggle Sprint": "STAND",
+        "Vehicle Boost": "HOLD",
+        "Crouch Slide": "ALL",
+        "Double Tap Crouch For Sprint Slide": "OFF",
+        "Infantry Weapon Zoom": "HOLD",
+        "Vehicle Weapon Zoom": "HOLD",
+        "Steady Scope": "HOLD",
+        "Interact & Reload": "PRIORITIZE INTERACT",
+        "Interacts": "TOGGLE",
+        "Skip Revive": "TOGGLE",
+        "Request Revive": "TOGGLE",
+        "Mount Breakout": "INSTANT",
+        "CommoRose": "HOLD",
+        "Scoreboard": "HOLD"
+      }
+    },
+    "CONTROLLER": {
+      "Controller Vibration": "ON",
+      "Vibration Intensity": 100,
+      "Vibration Mix": {
+        "Vibration Mix Preset": "IMMERSIVE",
+        "Destruction": "ON",
+        "Explosions": "ON",
+        "Incoming Damage": "ON",
+        "Weapon Fire": "ON"
+      }
+    },
+    "CHAT": {
+      "Play Incoming Text Chat as Speech": "OFF",
+      "Convert Incoming Voice to Text Chat": "OFF"
+    },
+    "TUTORIALS": {
+      "Menu Tutorials": "ON",
+      "In-Game Tutorials": "ON",
+      "Reset Tutorials": "RESET"
+    },
+    "HINTS": {
+      "Vehicle Control Hints": "ON",
+      "Action Prompts": "ON",
+      "Peek Hint": "ON",
+      "Ping Hints": "ON",
+      "Vault Hint": "OFF",
+      "Mount Hint": "ON"
+    }
+  },
+  "GAMEPLAY": {
+    "GLOBAL": {
+      "Invert All Vertical Look": null,
+      "Vertical Look Settings": {
+        "Invert All Vertical Look": null,
+        "Invert Vertical Look – Infantry": null,
+        "Invert Vertical Look – Vehicle Driver": null,
+        "Invert Vertical Look – Transport Driver": null,
+        "Invert Vertical Look – Aircraft": null,
+        "Invert Vertical Flight – Aircraft": null,
+        "Invert Vertical Look – Gunner": null
+      },
+      "Hold/Toggle": {
+        "Infantry Sprint": null,
+        "Double Tap Forward To Sprint": null,
+        "Crouch Toggle Sprint": null,
+        "Vehicle Boost": null,
+        "Crouch Slide": null,
+        "Double Tap Crouch For Sprint Slide": null,
+        "Infantry Weapon Zoom": null,
+        "Vehicle Weapon Zoom": null,
+        "Steady Scope": null,
+        "Interact & Reload": null,
+        "Interacts": null,
+        "Skip Revive": null,
+        "Request Revive": null,
+        "Mount Breakout": null,
+        "CommoRose": null,
+        "Scoreboard": null
+      },
+      "Capture Area Outline": null
+    },
+    "INFANTRY": {
+      "Infantry Aim Sensitivity": null,
+      "Infantry Mouse Aim Sensitivity": null,
+      "Double Tap Forward To Sprint": null,
+      "Crouch Toggle Sprint": null,
+      "Vault Over Sprint": null,
+      "Sprint Door Barge": null,
+      "Double Tap Crouch For Sprint Slide": null,
+      "Parachute Autodeploy": null,
+      "Roll camera in landing roll": null,
+      "Mount Type": null,
+      "Mount Breakout": null,
+      "Mount Presets": null,
+      "Peek Type": null,
+      "Interact & Reload": null,
+      "Invert Demolition Charge": null
+    },
+    "VEHICLES": {
+      "Vehicle Aim Sensitivity": null,
+      "Vehicle Mouse Aim Sensitivity": null,
+      "Aircraft Control Sensitivity": null,
+      "Helicopter Control Sensitivity": null,
+      "Helicopter Control Assists": null,
+      "Vehicle Aim-Relative Controls": null,
+      "Decouple Tank Turret Aiming from Turning": null,
+      "Vehicle Boost": null
+    },
+    "AIM ASSIST": {
+      "Infantry Aim Input Curve": null,
+      "Vehicle Aim Assist Zoom Snap": null,
+      "Infantry Aim Assist": null,
+      "Infantry Aim Assist Slowdown": null,
+      "Infantry Zoom Aim Input Curve": null,
+      "Infantry Aim Assist Zoom Snap": null,
+      "Vehicle Aim Input Curve": null,
+      "Vehicle Aim Assist": null,
+      "Vehicle Zoom Aim Input Curve": null,
+      "Vehicle Aim Assist Slowdown": null
+    }
+  },
+  "CAMPAIGN": {
+    "CAMPAIGN": {
+      "Difficulty": null,
+      "Show HUD": null,
+      "Auto Hide HUD": null
+    },
+    "TUTORIALS": {
+      "Menu Tutorials": null,
+      "In-Game Tutorials": null,
+      "Reset Tutorials": null
+    },
+    "SUBTITLES": {
+      "Subtitles": null,
+      "Subtitles Settings": {
+        "Subtitle Text Size": null,
+        "Subtitle Outline": null,
+        "Subtitles Background Opacity": null,
+        "Subtitles Text Opacity": null,
+        "Instructor Subtitles": null,
+        "Squad Subtitles": null,
+        "Friendly Subtitles": null,
+        "Show Speaker Name in Subtitles": null
+      }
+    }
+  },
+
+  "CONTROLLER": {
+    "EDIT SETTINGS": {
+      "INFANTRY": {
+        "Control Settings": {
+          "AIM": {
+            "Infantry Aim Sensitivity": null,
+            "Invert Vertical Look – Infantry": null,
+            "Field of View": null,
+            "Vertical Aim Ratio": null,
+            "Vertical Zoom Ratio": null,
+            "Uniform Infantry Aiming": null,
+            "Zoom Sensitivity Coefficient": null,
+            "Infantry Aim Assist": null,
+            "Infantry Aim Assist Slowdown": null,
+            "Infantry Aim Assist Zoom Snap": null,
+            "Infantry Aim Input Curve": null,
+            "Infantry Zoom Aim Input Curve": null,
+            "Stick Input Acceleration Presets": null,
+            "Aiming Left / Right Acceleration": null
+          },
+          "MOVEMENT": {
+            "Infantry Sprint": null,
+            "Double Tap Forward To Sprint": null,
+            "Sprint": null,
+            "Crouch Toggle Sprint": null,
+            "Vault Over Sprint": null,
+            "Slide": null,
+            "Crouch Slide": null,
+            "Double Tap Crouch For Sprint Slide": null
+          },
+          "ZOOM": {
+            "Infantry Weapon Zoom": null,
+            "Zoom": null,
+            "Steady Scope_Toggle": null,
+            "Steady Scope_Binding": null,
+            "Infantry Zoom Aim Sensitivity": null,
+            "Zoom Transition Sensitivity Smoothing": null,
+            "1.00x Zoom Aim Sensitivity": null,
+            "1.25x Zoom Aim Sensitivity": null,
+            "1.50x Zoom Aim Sensitivity": null,
+            "1.75x Zoom Aim Sensitivity": null,
+            "2.00x Zoom Aim Sensitivity": null,
+            "2.50x Zoom Aim Sensitivity": null,
+            "3.00x Zoom Aim Sensitivity": null,
+            "3.50x Zoom Aim Sensitivity": null,
+            "4.00x Zoom Aim Sensitivity": null,
+            "4.50x Zoom Aim Sensitivity": null,
+            "5.00x Zoom Aim Sensitivity": null,
+            "6.00x Zoom Aim Sensitivity": null,
+            "8.00x Zoom Aim Sensitivity": null,
+            "10.00x Zoom Aim Sensitivity": null
+          },
+          "OTHER": {
+            "Parachute Autodeploy": null,
+            "Interact & Reload": null,
+            "Interacts": null,
+            "Skip Revive": null,
+            "Request Revive": null,
+            "Invert Demolition Charge": null,
+            "Mount Breakout": null,
+            "Mount Type": null,
+            "Mount Presets": null,
+            "Peek Type": null
+          },
+          "GYRO": {
+            "Infantry Gyro Button": null,
+            "Infantry Gyro Aiming Mode": null
+          },
+          "FLICK LOOK": {
+            "Infantry Flick Look Mode": null,
+            "Infantry Flick Look Threshold": null,
+            "Infantry Flick Look Speed": null
+          }
+        },
+        "Buttons": null,
+        "Controls": null,
+        "Infantry/Passenger Control Mapping": {
+          "GENERAL": {
+            "Interact": null,
+            "Enter / Exit Vehicle": null,
+            "Big Map": null,
+            "Quick Loadout Customization (HOLD) / Toggle Inventory": null,
+            "Quick Loadout Customization": null,
+            "Toggle Inventory / Scoreboard (HOLD)": null,
+            "Scoreboard (HOLD)": null,
+            "Toggle Inventory": null,
+            "Change Seat in Vehicle": null,
+            "Vehicle Seat 1": null,
+            "Vehicle Seat 2": null,
+            "Vehicle Seat 3": null,
+            "Vehicle Seat 4": null,
+            "Vehicle Seat 5": null,
+            "Vehicle Seat 6": null,
+            "Skip to Deploy": null,
+            "Ping / CommoRose (HOLD) / Call-In Gadget Half Combo": null,
+            "Clear Pings": null,
+            "Grenade / Call-In Gadget Half Combo": null,
+            "Gyro Button": null
+          },
+          "MOVEMENT & AIMING": {
+            "Walk Forward": null,
+            "Walk Backward": null,
+            "Strafe Right": null,
+            "Strafe Left": null,
+            "Look Up": null,
+            "Look Down": null,
+            "Look Right": null,
+            "Look Left": null,
+            "Flick Look Forward": null,
+            "Flick Look Backward": null,
+            "Flick Look Right": null,
+            "Flick Look Left": null,
+            "Jump (PRESS) / Quick Upgrade (HOLD)": null,
+            "Jump": null,
+            "Quick Upgrade": null,
+            "Vault": null,
+            "Sprint": null,
+            "Crouch (HOLD)": null,
+            "Crouch (TOGGLE)": null,
+            "Crouch (TOGGLE) / Prone (HOLD)": null,
+            "Prone": null,
+            "Parachute Deploy": null,
+            "Slide": null,
+            "Lean / Peek": null
+          },
+          "WEAPONS & EQUIPMENT": {
+            "Fire": null,
+            "Zoom": null,
+            "Reload (TOGGLE) / Interact (HOLD)": null,
+            "Reload": null,
+            "Melee / Melee Takedown": null,
+            "Primary Weapon": null,
+            "Secondary Weapon": null,
+            "Cycle Primary / Armor (HOLD)": null,
+            "Cycle Primary": null,
+            "Armor": null,
+            "Gadget One": null,
+            "Gadget Two": null,
+            "Gadget Two / Weapon Inspect (HOLD)": null,
+            "Squad Progression / Class gadget": null,
+            "Squad Progression / Class gadget (PRESS) / NVG (HOLD)": null,
+            "Night Vision Goggles": null,
+            "Grenade": null,
+            "Toggle Laser and/or Flashlight": null,
+            "Toggle Laser and/or Flashlight if Not Zoomed": null,
+            "Toggle Laser and/or Flashlight if Zoomed": null,
+            "Toggle Laser": null,
+            "Toggle Flashlight": null,
+            "Fire Mode / Scope Zeroing": null,
+            "Range Finder Zeroing If Zoomed": null,
+            "Fire Mode / Zeroing / Range Finder Zeroing": null,
+            "Fire Mode / Range Finder Zeroing (HOLD) if Zoomed": null,
+            "Steady Scope": null,
+            "Toggle Scope": null,
+            "Toggle Scope / Steady Scope (HOLD)": null,
+            "Deploy Bipod/Mount": null
+          }
+        }
+      },
+      "GROUND VEHICLES": {
+        "Control Settings": {
+          "AIM": {
+            "Vehicle Aim Sensitivity": null,
+            "Invert Vertical Look – Vehicle Driver": null,
+            "Invert Vertical Look – Gunner": null,
+            "Vehicle 3rd Person Field of View": null,
+            "Tank Aim Sensitivity": null,
+            "Gunner Aim Sensitivity": null,
+            "Vertical Aim Ratio": null,
+            "Vertical Zoom Ratio": null,
+            "Uniform Vehicle Aiming": null,
+            "Zoom Sensitivity Coefficient": null,
+            "Vehicle Aim Input Curve": null,
+            "Vehicle Zoom Aim Input Curve": null,
+            "Vehicle Stick Input Acceleration Presets": null,
+            "Aiming Left / Right Acceleration": null,
+            "Vehicle Aim Assist": null,
+            "Vehicle Aim Assist Slowdown": null,
+            "Vehicle Aim Assist Zoom Snap": null
+          },
+          "MOVEMENT": {
+            "Decouple Tank Turret Aiming from Turning": null,
+            "Vehicle Aim-Relative Controls": null,
+            "Vehicle Boost": null
+          },
+          "ZOOM": {
+            "Vehicle Weapon Zoom": null,
+            "Gunner Zoom": null,
+            "Driver Zoom": null
+          },
+          "GYRO": {
+            "Vehicle Gyro Button": null,
+            "Vehicle Gyro Aiming Mode": null
+          },
+          "FLICK LOOK": {
+            "Vehicle Flick Look Mode": null,
+            "Vehicle Flick Look Threshold": null,
+            "Vehicle Flick Look Speed": null
+          }
+        },
+        "Buttons": null,
+        "Vehicle Driving": null,
+        "Ground Vehicle Driver Control Mapping": {
+          "GENERAL": {
+            "Exit vehicle": null,
+            "Reload / Exit Vehicle (HOLD)": null,
+            "Big Map": null,
+            "Big Map / Quick Loadout Customization (HOLD) / Toggle Inventory (HOLD)": null,
+            "Quick Loadout Customization": null,
+            "Toggle Inventory / Scoreboard (HOLD)": null,
+            "Scoreboard (HOLD)": null,
+            "Toggle Inventory": null,
+            "Chase Camera": null,
+            "Change Seat": null,
+            "Vehicle Seat 1": null,
+            "Vehicle Seat 2": null,
+            "Vehicle Seat 3": null,
+            "Vehicle Seat 4": null,
+            "Vehicle Seat 5": null,
+            "Vehicle Seat 6": null,
+            "Ping / CommoRose (HOLD) / Call-In Gadget Half Combo": null,
+            "Clear Pings": null,
+            "Gyro Button": null
+          },
+          "MOVEMENT & AIMING": {
+            "Accelerate": null,
+            "Brake / Reverse": null,
+            "Turn Right": null,
+            "Turn Left": null,
+            "Move Forward": null,
+            "Move Backward": null,
+            "Move Right": null,
+            "Move Left": null,
+            "Crawl (HOLD)": null,
+            "Aim Up": null,
+            "Aim Down": null,
+            "Aim Right": null,
+            "Aim Left": null,
+            "Flick Look Forward": null,
+            "Flick Look Backward": null,
+            "Flick Look Right": null,
+            "Flick Look Left": null,
+            "Driver Zoom": null,
+            "Boost": null,
+            "Handbrake": null,
+            "Lock Turret": null
+          },
+          "WEAPONS & EQUIPMENT": {
+            "Fire": null,
+            "Switch Weapon": null,
+            "Primary Weapon": null,
+            "Secondary Weapon": null,
+            "Activate Equipment Slot 1": null,
+            "Activate Equipment Slot 2": null
+          }
+        }
+      },
+      "TRANSPORT VEHICLE": {
+        "Control Settings": {
+          "AIM": {
+            "Vehicle Aim Sensitivity": null,
+            "Invert Vertical Look – Transport Driver": null,
+            "Invert Vertical Look – Gunner": null,
+            "Vehicle 3rd Person Field of view": null,
+            "Transport Vehicle Freelook Sensitivity": null,
+            "Vertical Aim Ratio": null,
+            "Vertical Zoom Aim Ratio": null,
+            "Uniform Vehicle Aiming": null,
+            "Zoom Sensitivity Coefficient": null,
+            "Vehicle Aim Input Curve": null,
+            "Vehicle Zoom Aim Input Curve": null,
+            "Vehicle Stick Input Acceleration Presets": null,
+            "Aiming Left / Right Acceleration": null
+          },
+          "MOVEMENT": {
+            "Vehicle Boost": null
+          },
+          "ZOOM": {
+            "Vehicle Weapon Zoom": null,
+            "Driver Zoom": null
+          },
+          "GYRO": {
+            "Vehicle Gyro Button": null,
+            "Vehicle Gyro Aiming Mode": null
+          },
+          "FLICK LOOK": {
+            "Vehicle Flick Look Mode": null,
+            "Vehicle Flick Look Threshold": null,
+            "Vehicle Flick Look Speed": null
+          }
+        },
+        "Buttons": null,
+        "Transport Driving": null,
+        "Transport Vehicle Driver Control Mapping": {
+          "GENERAL": {
+            "Exit vehicle": null,
+            "Exit Vehicle (HOLD)": null,
+            "Big Map": null,
+            "Big Map / Quick Loadout Customization (HOLD) / Toggle Inventory (HOLD)": null,
+            "Quick Loadout Customization": null,
+            "Toggle Inventory / Scoreboard (HOLD)": null,
+            "Scoreboard (HOLD)": null,
+            "Toggle Inventory": null,
+            "Chase Camera": null,
+            "Horn": null,
+            "Change Seat": null,
+            "Vehicle Seat 2": null,
+            "Vehicle Seat 3": null,
+            "Vehicle Seat 4": null,
+            "Vehicle Seat 5": null,
+            "Vehicle Seat 6": null,
+            "Handbrake": null,
+            "Ping / CommoRose (HOLD) / Call-In Gadget Half Combo": null,
+            "Clear Pings": null,
+            "Gyro Button": null
+          },
+          "MOVEMENT & AIMING": {
+            "Accelerate": null,
+            "Brake / Reverse": null,
+            "Turn Right": null,
+            "Turn Left": null,
+            "Move Forward": null,
+            "Move Backward": null,
+            "Move Right": null,
+            "Move Left": null,
+            "Boost": null,
+            "Freelook Up": null,
+            "Freelook Down": null,
+            "Freelook Right": null,
+            "Freelook Left": null
+          }
+        }
+      },
+      "AIRCRAFT": {
+        "Control Settings": {
+          "PILOT": {
+            "Invert Vertical Flight – Aircraft": null,
+            "Invert Vertical Look – Aircraft": null,
+            "Aircraft Control Sensitivity": null,
+            "Third Person Aircraft Camera Roll": null
+          },
+          "AIM": {
+            "Vehicle Aim Sensitivity": null,
+            "Vehicle 3rd Person Field of View": null,
+            "Vertical Aim Ratio": null,
+            "Vertical Zoom Aim Ratio": null,
+            "Uniform Vehicle Aiming": null,
+            "Zoom Sensitivity Coefficient": null,
+            "Vehicle Aim Input Curve": null,
+            "Vehicle Zoom Aim Input Curve": null,
+            "Vehicle Stick Input Acceleration Presets": null,
+            "Aiming Left / Right Acceleration": null
+          },
+          "MOVEMENT": {
+            "Vehicle Aim-Relative Controls": null,
+            "Vehicle Boost": null
+          },
+          "ZOOM": {
+            "Vehicle Weapon Zoom": null,
+            "Airplane Zoom": null
+          },
+          "GYRO": {
+            "Vehicle Gyro Button": null,
+            "Vehicle Gyro Aiming Mode": null
+          },
+          "FLICK LOOK": {
+            "Vehicle Flick Look Mode": null,
+            "Vehicle Flick Look Threshold": null,
+            "Vehicle Flick Look Speed": null
+          }
+        },
+        "Buttons": null,
+        "Controls": null,
+        "Aircraft Pilot Control Mapping": {
+          "GENERAL": {
+            "Exit vehicle": null,
+            "Reload / Exit Vehicle (HOLD)": null,
+            "Big Map": null,
+            "Big Map / Quick Loadout Customization (HOLD) / Toggle Inventory (HOLD)": null,
+            "Quick Loadout Customization": null,
+            "Toggle Inventory / Scoreboard (HOLD)": null,
+            "Scoreboard (HOLD)": null,
+            "Toggle Inventory": null,
+            "Chase Camera": null,
+            "Change Seat": null,
+            "Vehicle Seat 2": null,
+            "Vehicle Seat 3": null,
+            "Vehicle Seat 4": null,
+            "Vehicle Seat 5": null,
+            "Vehicle Seat 6": null,
+            "Ping / CommoRose (HOLD) / Call-In Gadget Half Combo": null,
+            "Clear Pings": null,
+            "Gyro Button": null
+          },
+          "MOVEMENT & AIMING": {
+            "Throttle Up": null,
+            "Throttle Down": null,
+            "Yaw Right": null,
+            "Yaw Left": null,
+            "Pitch Down": null,
+            "Pitch Up": null,
+            "Roll Right": null,
+            "Roll Left": null,
+            "Freelook Up": null,
+            "Freelook Down": null,
+            "Freelook Right": null,
+            "Freelook Left": null,
+            "Freelook": null,
+            "Flight Mode": null,
+            "Afterburner": null
+          },
+          "WEAPONS & EQUIPMENT": {
+            "Fire": null,
+            "Airplane Zoom": null,
+            "Switch Weapon": null,
+            "Primary Weapon": null,
+            "Secondary Weapon": null,
+            "Activate Equipment Slot 1": null,
+            "Activate Equipment Slot 2": null
+          }
+        }
+      },
+      "HELICOPTER": {
+        "Control Settings": {
+          "PILOT": {
+            "Helicopter Control Assists": null,
+            "Helicopter Control Sensitivity": null,
+            "Invert Vertical Flight – Aircraft": null,
+            "Invert Vertical Look – Aircraft": null
+          },
+          "AIM": {
+            "Vehicle Aim Sensitivity": null,
+            "Vehicle 3rd Person Field of View": null,
+            "Gunner Aim Sensitivity": null,
+            "Vertical Aim Ratio": null,
+            "Vertical Zoom Aim Ratio": null,
+            "Uniform Vehicle Aiming": null,
+            "Zoom Sensitivity Coefficient": null,
+            "Vehicle Aim Input Curve": null,
+            "Vehicle Zoom Aim Input Curve": null,
+            "Vehicle Stick Input Acceleration Presets": null,
+            "Aiming Left / Right Acceleration": null
+          },
+          "MOVEMENT": {
+            "Vehicle Aim-Relative Controls": null,
+            "Vehicle Boost": null
+          },
+          "ZOOM": {
+            "Vehicle Weapon Zoom": null,
+            "Gunner Zoom": null,
+            "Helicopter Zoom": null
+          },
+          "GYRO": {
+            "Vehicle Gyro Button": null,
+            "Vehicle Gyro Aiming Mode": null
+          },
+          "FLICK LOOK": {
+            "Vehicle Flick Look Mode": null,
+            "Vehicle Flick Look Threshold": null,
+            "Vehicle Flick Look Speed": null
+          }
+        },
+        "Buttons": null,
+        "Controls": null,
+        "Helicopter Pilot Control Mapping": {
+          "GENERAL": {
+            "Exit vehicle": null,
+            "Reload / Exit Vehicle (HOLD)": null,
+            "Change Seat": null,
+            "Big Map": null,
+            "Big Map / Quick Loadout Customization (HOLD) / Toggle Inventory (HOLD)": null,
+            "Quick Loadout Customization": null,
+            "Toggle Inventory / Scoreboard (HOLD)": null,
+            "Scoreboard (HOLD)": null,
+            "Toggle Inventory": null,
+            "Chase Camera": null,
+            "Vehicle Seat 2": null,
+            "Vehicle Seat 3": null,
+            "Vehicle Seat 4": null,
+            "Vehicle Seat 5": null,
+            "Vehicle Seat 6": null,
+            "Ping / CommoRose (HOLD) / Call-In Gadget Half Combo": null,
+            "Clear Pings": null,
+            "Gyro Button": null
+          },
+          "MOVEMENT & AIMING": {
+            "Throttle Up": null,
+            "Throttle Down": null,
+            "Yaw Right": null,
+            "Yaw Left": null,
+            "Pitch Down": null,
+            "Pitch Up": null,
+            "Roll Right": null,
+            "Roll Left": null,
+            "Heli Assist Ascend": null,
+            "Heli Assist Descend": null,
+            "Freelook Up": null,
+            "Freelook Down": null,
+            "Freelook Right": null,
+            "Freelook Left": null,
+            "Freelook": null
+          },
+          "WEAPONS & EQUIPMENT": {
+            "Fire": null,
+            "Helicopter Zoom": null,
+            "Switch Weapon": null,
+            "Primary Weapon": null,
+            "Secondary Weapon": null,
+            "Activate Equipment Slot 1": null,
+            "Activate Equipment Slot 2": null
+          }
+        }
+      },
+      "GUNNER": {
+        "Control Settings": {
+          "AIM": {
+            "Gunner Aim Sensitivity": null,
+            "Invert Vertical Look – Gunner": null,
+            "Vehicle 3rd Person Field of View": null,
+            "Vertical Aim Ratio": null,
+            "Vertical Zoom Aim Ratio": null,
+            "Uniform Vehicle Aiming": null,
+            "Zoom Sensitivity Coefficient": null,
+            "Vehicle Aim Input Curve": null,
+            "Vehicle Aim Assist": null,
+            "Vehicle Aim Assist Slowdown": null,
+            "Vehicle Zoom Aim Input Curve": null,
+            "Vehicle Aim Assist Zoom Snap": null,
+            "Vehicle Stick Input Acceleration Presets": null,
+            "Aiming Left / Right Acceleration": null
+          },
+          "ZOOM": {
+            "Gunner Zoom": null
+          }
+        },
+        "Buttons": null,
+        "Controls": null,
+        "Gunner Control Mapping": {
+          "GENERAL": {
+            "Reload": null,
+            "Exit vehicle": null,
+            "Reload / Exit Vehicle (HOLD)": null,
+            "Big Map": null,
+            "Big Map / Quick Loadout Customization (HOLD) / Toggle Inventory (HOLD)": null,
+            "Quick Loadout Customization": null,
+            "Toggle Inventory / Scoreboard (HOLD)": null,
+            "Scoreboard (HOLD)": null,
+            "Toggle Inventory": null,
+            "Change Seat in Vehicle": null,
+            "Vehicle Seat 1": null,
+            "Vehicle Seat 2": null,
+            "Vehicle Seat 3": null,
+            "Vehicle Seat 4": null,
+            "Vehicle Seat 5": null,
+            "Vehicle Seat 6": null,
+            "Ping / CommoRose (HOLD) / Call-In Gadget Half Combo": null,
+            "Clear Pings": null,
+            "Gyro Button": null
+          },
+          "MOVEMENT & AIMING": {
+            "Aim Up": null,
+            "Aim Down": null,
+            "Aim Right": null,
+            "Aim Left": null,
+            "Flick Look Forward": null,
+            "Flick Look Backward": null,
+            "Flick Look Right": null,
+            "Flick Look Left": null
+          },
+          "WEAPONS & EQUIPMENT": {
+            "Fire": null,
+            "Gunner Zoom": null,
+            "Switch Weapon": null,
+            "Primary Weapon": null,
+            "Secondary Weapon": null,
+            "Activate Equipment Slot": null
+          }
+        }
+      },
+      "JOYSTICK": {
+        "Joystick": {
+          "CONTROL SCHEMES": {
+            "Infantry": null,
+            "Ground Vehicles": null,
+            "Transport Vehicle": null,
+            "Aircraft": null,
+            "Helicopter": null,
+            "Gunner": null
+          },
+          "JOYSTICK": {
+            "Center Deadzone": null,
+            "Axial Deadzone": null,
+            "Max Input Threshold": null
+          }
+        }
+      },
+      "OTHER": {
+        "UI Control Mapping": {
+          "Big Map": null,
+          "Chat": null,
+          "Team Chat Channel": null,
+          "Push To Talk Binding": null,
+          "Squad Chat Channel": null,
+          "Party Chat Channel": null,
+          "Chat All": null,
+          "Toggle Chat": null,
+          "Social Menu": null,
+          "Chat Background Opacity": null,
+          "Interactive Scoreboard": null,
+          "Ping / Ping / CommoRose (HOLD) / Call-In Gadget Half Combo": null,
+          "CLEAR PING": null,
+          "Bigmap Zoom In": null,
+          "Bigmap Zoom Out": null,
+          "Inventory Request": null
+        },
+        "Controller Tuning": {
+          "CONTROLLER VIBRATION": {
+            "Controller Vibration": null,
+            "Vibration Intensity": null,
+            "Vibration Mix Preset": null,
+            "Vibration Mix": {
+              "Vibration Mix Preset": null,
+              "Destruction": null,
+              "Explosions": null,
+              "Incoming Damage": null,
+              "Weapon Fire": null
+            }
+          },
+          "CONTROLLER LEFT STICK": {
+            "Center Deadzone": null,
+            "Axial Deadzone": null,
+            "Max Input Threshold": null
+          },
+          "CONTROLLER RIGHT STICK": {
+            "Center Deadzone": null,
+            "Axial Deadzone": null,
+            "Max Input Threshold": null
+          },
+          "CONTROLLER TRIGGERS": {
+            "LT Deadzone": null,
+            "LT Max Input Threshold": null,
+            "RT Deadzone": null,
+            "RT Max Input Threshold": null
+          }
+        }
+      }
+    }
+  },
+
+  "MOUSE_AND_KEYBOARD": {
+    "INFANTRY": {
+      "Infantry Mouse Aim Sensitivity": null,
+      "Control Settings": {
+        "AIM": {
+          "Uniform Infantry Aiming": null,
+          "Zoom Sensitivity Coefficient": null,
+          "Infantry Mouse Aim Sensitivity": null,
+          "Infantry Zoom Aim Sensitivity": null,
+          "Vertical Mouse Aim Ratio": null,
+          "Invert Vertical Look – Infantry": null,
+          "Field of View": null
+        },
+        "MOVEMENT": {
+          "Infantry Sprint": null,
+          "Double Tap Forward To Sprint": null,
+          "Sprint": null,
+          "Crouch Toggle Sprint": null,
+          "Vault Over Sprint": null,
+          "Slide": null,
+          "Crouch Slide": null,
+          "Double Tap Crouch For Sprint Slide": null,
+          "Roll camera in landing roll": null
+        },
+        "ZOOM": {
+          "Infantry Weapon Zoom": null,
+          "Zoom": null,
+          "Steady Scope_Mode": null,
+          "Steady Scope_Binding": null,
+          "Vertical Mouse Zoom Aim Ratio": null,
+          "Zoom Transition Sensitivity Smoothing": null,
+          "1.00x Zoom Aim Sensitivity": null,
+          "1.25x Zoom Aim Sensitivity": null,
+          "1.50x Zoom Aim Sensitivity": null,
+          "1.75x Zoom Aim Sensitivity": null,
+          "2.00x Zoom Aim Sensitivity": null,
+          "2.50x Zoom Aim Sensitivity": null,
+          "3.00x Zoom Aim Sensitivity": null,
+          "3.50x Zoom Aim Sensitivity": null,
+          "4.00x Zoom Aim Sensitivity": null,
+          "4.50x Zoom Aim Sensitivity": null,
+          "5.00x Zoom Aim Sensitivity": null,
+          "6.00x Zoom Aim Sensitivity": null,
+          "8.00x Zoom Aim Sensitivity": null,
+          "10.00x Zoom Aim Sensitivity": null
+        },
+        "OTHER": {
+          "Parachute Autodeploy": null,
+          "Interact & Reload": null,
+          "Skip Revive": null,
+          "Request Revive": null,
+          "Invert Demolition Charge": null,
+          "Mount Breakout": null,
+          "Mount Presets": null,
+          "Peek Type": null,
+          "Mount Type": null,
+          "Interacts": null
+        }
+      },
+      "Infantry/Passenger Keybinds": {
+        "GENERAL": {
+          "Interact": null,
+          "Enter / Exit Vehicle": null,
+          "Big Map": null,
+          "Big Map / Quick Loadout Customization (HOLD) / Toggle Inventory (HOLD)": null,
+          "Quick Loadout Customization": null,
+          "Toggle Inventory / Scoreboard (HOLD)": null,
+          "Scoreboard (HOLD)": null,
+          "Toggle Inventory": null,
+          "Change Seat in Vehicle": null,
+          "Vehicle Seat 1": null,
+          "Vehicle Seat 2": null,
+          "Vehicle Seat 3": null,
+          "Vehicle Seat 4": null,
+          "Vehicle Seat 5": null,
+          "Vehicle Seat 6": null,
+          "Skip to Deploy": null,
+          "Ping / CommoRose (HOLD) / Call-In Gadget Half Combo": null,
+          "Clear Pings": null,
+          "Grenade / Call-In Gadget Half Combo": null
+        },
+        "MOVEMENT & AIMING": {
+          "Walk Forward": null,
+          "Walk Backward": null,
+          "Strafe Right": null,
+          "Strafe Left": null,
+          "Look Up": null,
+          "Look Down": null,
+          "Look Right": null,
+          "Look Left": null,
+          "Flick Look Forward": null,
+          "Flick Look Backward": null,
+          "Flick Look Right": null,
+          "Flick Look Left": null,
+          "Jump (PRESS) / Quick Upgrade (HOLD)": null,
+          "Jump": null,
+          "Quick Upgrade": null,
+          "Vault": null,
+          "Sprint": null,
+          "Crouch (HOLD)": null,
+          "Crouch (TOGGLE)": null,
+          "Crouch (TOGGLE) / Prone (HOLD)": null,
+          "Prone": null,
+          "Parachute Deploy": null,
+          "Slide": null,
+          "Lean / Peek": null
+        },
+        "WEAPONS & EQUIPMENT": {
+          "Fire": null,
+          "Zoom": null,
+          "Reload (TOGGLE) / Interact (HOLD)": null,
+          "Reload": null,
+          "Melee / Melee Takedown": null,
+          "Primary Weapon": null,
+          "Secondary Weapon": null,
+          "Cycle Primary / Armor (HOLD)": null,
+          "Cycle Primary": null,
+          "Armor": null,
+          "Weapon Inspect": null,
+          "Gadget One": null,
+          "Gadget Two": null,
+          "Gadget Two / Weapon Inspect (HOLD)": null,
+          "Squad Progression / Class gadget": null,
+          "Squad Progression / Class gadget (PRESS) / NVG (HOLD)": null,
+          "Night Vision Goggles": null,
+          "Grenade": null,
+          "Toggle Laser and/or Flashlight": null,
+          "Toggle Laser and/or Flashlight if Not Zoomed": null,
+          "Toggle Laser and/or Flashlight if Zoomed": null,
+          "Toggle Laser": null,
+          "Toggle Flashlight": null,
+          "Fire Mode / Scope Zeroing": null,
+          "Range Finder Zeroing If Zoomed": null,
+          "Fire Mode / Zeroing / Range Finder Zeroing": null,
+          "Fire Mode / Range Finder Zeroing (HOLD) if Zoomed": null,
+          "Steady Scope": null,
+          "Toggle Scope": null,
+          "Toggle Scope / Steady Scope (HOLD)": null,
+          "Deploy Bipod/Mount": null
+        }
+      }
+    },
+    "VEHICLES": {
+      "Vehicle Mouse Aim Sensitivity": null,
+      "Control Settings": {
+        "PILOT": {
+          "Invert Vertical Flight – Aircraft": null,
+          "Invert Vertical Look – Aircraft": null,
+          "Aircraft Control Sensitivity": null,
+          "Helicopter Control Sensitivity": null,
+          "Helicopter Control Assists": null,
+          "Third Person Aircraft Camera Roll": null
+        },
+        "AIM": {
+          "Uniform Vehicle Aiming": null,
+          "Vertical Mouse Aim Ratio": null,
+          "Vertical Mouse Zoom Aim Ratio": null,
+          "Zoom Sensitivity Coefficient": null,
+          "Vehicle Aim-Relative Controls": null,
+          "Decouple Tank Turret Aiming from Turning": null,
+          "Vehicle Mouse Aim Sensitivity": null,
+          "Invert Vertical Look – Vehicle Driver": null,
+          "Invert Vertical Look – Transport Driver": null,
+          "Invert Vertical Look – Gunner": null,
+          "Vehicle 3rd Person Field of View": null,
+          "Tank Aim Sensitivity": null,
+          "Gunner Aim Sensitivity": null,
+          "Transport Vehicle Freelook Sensitivity": null
+        },
+        "MOVEMENT": {
+          "Vehicle Boost": null
+        },
+        "ZOOM": {
+          "Vehicle Weapon Zoom": null,
+          "Driver Zoom": null,
+          "Gunner Zoom": null,
+          "Airplane Zoom": null,
+          "Helicopter Zoom": null
+        }
+      },
+      "Ground Vehicle Driver Keybinds": {
+        "GENERAL": {
+          "Exit vehicle": null,
+          "Reload / Exit Vehicle (HOLD)": null,
+          "Big Map": null,
+          "Big Map / Quick Loadout Customization (HOLD) / Toggle Inventory (HOLD)": null,
+          "Quick Loadout Customization": null,
+          "Toggle Inventory / Scoreboard (HOLD)": null,
+          "Scoreboard (HOLD)": null,
+          "Toggle Inventory": null,
+          "Chase Camera": null,
+          "Change Seat": null,
+          "Vehicle Seat 1": null,
+          "Vehicle Seat 2": null,
+          "Vehicle Seat 3": null,
+          "Vehicle Seat 4": null,
+          "Vehicle Seat 5": null,
+          "Vehicle Seat 6": null,
+          "Ping / CommoRose (HOLD) / Call-In Gadget Half Combo": null,
+          "Clear Pings": null
+        },
+        "MOVEMENT & AIMING": {
+          "Accelerate": null,
+          "Brake / Reverse": null,
+          "Turn Right": null,
+          "Turn Left": null,
+          "Move Forward": null,
+          "Move Backward": null,
+          "Move Right": null,
+          "Move Left": null,
+          "Crawl (HOLD)": null,
+          "Aim Up": null,
+          "Aim Down": null,
+          "Aim Right": null,
+          "Aim Left": null,
+          "Flick Look Forward": null,
+          "Flick Look Backward": null,
+          "Flick Look Right": null,
+          "Flick Look Left": null,
+          "Driver Zoom": null,
+          "Boost": null,
+          "Handbrake": null,
+          "Lock Turret": null
+        },
+        "WEAPONS & EQUIPMENT": {
+          "Fire": null,
+          "Switch Weapon": null,
+          "Primary Weapon": null,
+          "Secondary Weapon": null,
+          "Activate Equipment Slot 1": null,
+          "Activate Equipment Slot 2": null
+        }
+      },
+      "Transport Vehicle Driver Keybinds": {
+        "GENERAL": {
+          "Exit vehicle": null,
+          "Exit Vehicle (HOLD)": null,
+          "Big Map": null,
+          "Big Map / Quick Loadout Customization (HOLD) / Toggle Inventory (HOLD)": null,
+          "Quick Loadout Customization": null,
+          "Toggle Inventory / Scoreboard (HOLD)": null,
+          "Scoreboard (HOLD)": null,
+          "Toggle Inventory": null,
+          "Chase Camera": null,
+          "Horn": null,
+          "Change Seat": null,
+          "Vehicle Seat 2": null,
+          "Vehicle Seat 3": null,
+          "Vehicle Seat 4": null,
+          "Vehicle Seat 5": null,
+          "Vehicle Seat 6": null,
+          "Handbrake": null,
+          "Ping / CommoRose (HOLD) / Call-In Gadget Half Combo": null,
+          "Clear Pings": null
+        },
+        "MOVEMENT & AIMING": {
+          "Accelerate": null,
+          "Brake / Reverse": null,
+          "Turn Right": null,
+          "Turn Left": null,
+          "Move Forward": null,
+          "Move Backward": null,
+          "Move Right": null,
+          "Move Left": null,
+          "Boost": null,
+          "Freelook Up": null,
+          "Freelook Down": null,
+          "Freelook Right": null,
+          "Freelook Left": null
+        }
+      },
+      "Aircraft Pilot Keybinds": {
+        "GENERAL": {
+          "Exit vehicle": null,
+          "Reload / Exit Vehicle (HOLD)": null,
+          "Big Map": null,
+          "Big Map / Quick Loadout Customization (HOLD) / Toggle Inventory (HOLD)": null,
+          "Quick Loadout Customization": null,
+          "Toggle Inventory / Scoreboard (HOLD)": null,
+          "Scoreboard (HOLD)": null,
+          "Toggle Inventory": null,
+          "Chase Camera": null,
+          "Change Seat": null,
+          "Vehicle Seat 2": null,
+          "Vehicle Seat 3": null,
+          "Vehicle Seat 4": null,
+          "Vehicle Seat 5": null,
+          "Vehicle Seat 6": null,
+          "Ping / CommoRose (HOLD) / Call-In Gadget Half Combo": null,
+          "Clear Pings": null
+        },
+        "MOVEMENT & AIMING": {
+          "Throttle Up": null,
+          "Throttle Down": null,
+          "Yaw Right": null,
+          "Yaw Left": null,
+          "Pitch Down": null,
+          "Pitch Up": null,
+          "Roll Right": null,
+          "Roll Left": null,
+          "Freelook Up": null,
+          "Freelook Down": null,
+          "Freelook Right": null,
+          "Freelook Left": null,
+          "Freelook": null,
+          "Flight Mode": null,
+          "Afterburner": null
+        },
+        "WEAPONS & EQUIPMENT": {
+          "Fire": null,
+          "Airplane Zoom": null,
+          "Switch Weapon": null,
+          "Primary Weapon": null,
+          "Secondary Weapon": null,
+          "Activate Equipment Slot 1": null,
+          "Activate Equipment Slot 2": null
+        }
+      },
+      "Helicopter Pilot Keybinds": {
+        "GENERAL": {
+          "Exit vehicle": null,
+          "Reload / Exit Vehicle (HOLD)": null,
+          "Change Seat": null,
+          "Big Map": null,
+          "Big Map / Quick Loadout Customization (HOLD) / Toggle Inventory (HOLD)": null,
+          "Quick Loadout Customization": null,
+          "Toggle Inventory / Scoreboard (HOLD)": null,
+          "Scoreboard (HOLD)": null,
+          "Toggle Inventory": null,
+          "Chase Camera": null,
+          "Vehicle Seat 2": null,
+          "Vehicle Seat 3": null,
+          "Vehicle Seat 4": null,
+          "Vehicle Seat 5": null,
+          "Vehicle Seat 6": null,
+          "Ping / CommoRose (HOLD) / Call-In Gadget Half Combo": null,
+          "Clear Pings": null
+        },
+        "MOVEMENT & AIMING": {
+          "Throttle Up": null,
+          "Throttle Down": null,
+          "Yaw Right": null,
+          "Yaw Left": null,
+          "Pitch Down": null,
+          "Pitch Up": null,
+          "Roll Right": null,
+          "Roll Left": null,
+          "Heli Assist Ascend": null,
+          "Heli Assist Descend": null,
+          "Freelook Up": null,
+          "Freelook Down": null,
+          "Freelook Right": null,
+          "Freelook Left": null,
+          "Freelook": null
+        },
+        "WEAPONS & EQUIPMENT": {
+          "Fire": null,
+          "Helicopter Zoom": null,
+          "Switch Weapon": null,
+          "Primary Weapon": null,
+          "Secondary Weapon": null,
+          "Activate Equipment Slot 1": null,
+          "Activate Equipment Slot 2": null
+        }
+      },
+      "Gunner Keybinds": {
+        "GENERAL": {
+          "Reload": null,
+          "Exit vehicle": null,
+          "Reload / Exit Vehicle (HOLD)": null,
+          "Big Map": null,
+          "Big Map / Quick Loadout Customization (HOLD) / Toggle Inventory (HOLD)": null,
+          "Quick Loadout Customization": null,
+          "Toggle Inventory / Scoreboard (HOLD)": null,
+          "Scoreboard (HOLD)": null,
+          "Toggle Inventory": null,
+          "Change Seat in Vehicle": null,
+          "Vehicle Seat 1": null,
+          "Vehicle Seat 2": null,
+          "Vehicle Seat 3": null,
+          "Vehicle Seat 4": null,
+          "Vehicle Seat 5": null,
+          "Vehicle Seat 6": null,
+          "Ping / CommoRose (HOLD) / Call-In Gadget Half Combo": null,
+          "Clear Pings": null
+        },
+        "MOVEMENT & AIMING": {
+          "Aim Up": null,
+          "Aim Down": null,
+          "Aim Right": null,
+          "Aim Left": null,
+          "Flick Look Forward": null,
+          "Flick Look Backward": null,
+          "Flick Look Right": null,
+          "Flick Look Left": null
+        },
+        "WEAPONS & EQUIPMENT": {
+          "Fire": null,
+          "Gunner Zoom": null,
+          "Switch Weapon": null,
+          "Primary Weapon": null,
+          "Secondary Weapon": null,
+          "Activate Equipment Slot": null
+        }
+      }
+    },
+    "OTHER": {
+      "UI Keybinds": {
+        "Scoreboard (HOLD)": null,
+        "Big Map": null,
+        "Chat": null,
+        "Team Chat Channel": null,
+        "Push To Talk Binding": null,
+        "Squad Chat Channel": null,
+        "Party Chat Channel": null,
+        "Chat All": null,
+        "Toggle Chat": null,
+        "Social Menu": null,
+        "Chat Background Opacity": null,
+        "Interactive Scoreboard": null,
+        "Ping / Ping / CommoRose (HOLD) / Call-In Gadget Half Combo": null,
+        "CLEAR PING": null,
+        "Bigmap Zoom In": null,
+        "Bigmap Zoom Out": null,
+        "Inventory Request": null
+      },
+      "Mouse Raw Input": null
+    }
+  },
+  "GRAPHICS": {
+    "GRAPHICS": {
+      "Performance Preset": null,
+      "Graphics Quality": null,
+      "Graphics Quality Settings": {
+        "Graphics Quality": null,
+        "Texture Quality": null,
+        "Texture Filtering": null,
+        "Mesh Quality": null,
+        "Terrain Quality": null,
+        "Undergrowth Quality": null,
+        "Effects Quality": null,
+        "Volumetric Quality": null,
+        "Lighting Quality": null,
+        "Local Light & Shadow Quality": null,
+        "Sun Shadow Quality": null,
+        "Shadow Filtering": null,
+        "Reflection Quality": null,
+        "Screen Space Reflections": null,
+        "Post Process Quality": null,
+        "Screen Space AO & GI": null,
+        "High Fidelity Objects Amount": null
+      },
+      "World Brightness": null,
+      "UI Brightness": null,
+      "Sharpness": null,
+      "Advanced": {
+        "Fixed Resolution Scale": null,
+        "Frame Rate Limiter": null,
+        "Frame Rate Limit": null,
+        "Dynamic Resolution Scale": null,
+        "NVIDIA Reflex Low Latency": null,
+        "Anti-Aliasing": null,
+        "Upscaling Technique": null,
+        "Upscaling Quality": null,
+        "AMD FSR Frame Generation": null,
+        "Future Frame Rendering": null,
+        "Performance Overlay": null
+      }
+    },
+    "CAMERA SETTINGS": {
+      "Field of View": null,
+      "Vehicle 3rd Person Field of View": null,
+      "Weapon Field Of View": null,
+      "Weapon Motion Blur": null,
+      "World Motion Blur": null,
+      "Camera Shake Amount": null,
+      "Reduce Sprint Camera Bobbing": null,
+      "Chromatic Aberration": null,
+      "Vignette": null,
+      "Film Grain": null
+    },
+    "DISPLAY": {
+      "Fullscreen Mode": null,
+      "Fullscreen Device": null,
+      "Fullscreen Resolution": null,
+      "Aspect Ratio": null,
+      "Refresh Rate": null,
+      "Vertical Sync": null,
+      "HDR Calibration": null
+    },
+    "INTERFACE AND HUD": {
+      "Show HUD": null,
+      "Infantry HUD Motion": null,
+      "Vehicle HUD Motion": null,
+      "Show Soldier Overlays": null,
+      "Show Vehicle Overlays": null,
+      "Show Outlines on Friendly Targeted Soldiers": null,
+      "SOVIS Filter": null,
+      "Advanced HUD Settings": {
+        "GENERAL": {
+          "Horizontal HUD Padding": null
+        },
+        "KILL FEED": {
+          "Show Kills Made by": null,
+          "Kill Feed Icons": null,
+          "Ping Notifications": null
+        },
+        "MINIMAP": {
+          "Minimap Size": null,
+          "Minimap Background Opacity": null,
+          "Cone Opacity": null,
+          "Cone Edge Opacity": null,
+          "View Rotation": null,
+          "Interior Zoom": null,
+          "View Distance On Foot": null,
+          "View Distance In Ground Vehicle": null,
+          "View Distance In Air": null
+        },
+        "BIGMAP": {
+          "Bigmap Opacity": null
+        },
+        "WORLD LOG": {
+          "Show Resources": null,
+          "Show Loot": null,
+          "Show Game Mode Events": null
+        },
+        "SQUAD LIST": {
+          "Simplified Squad List": null
+        },
+        "INFANTRY COMPASS": {
+          "Show Compass Multiplayer": null,
+          "Compass Opacity": null,
+          "Display Spotted Enemies": null
+        },
+        "VEHICLE HUD": {
+          "Tank HUD Color": null,
+          "Jet HUD Color": null,
+          "Helicopter HUD Color": null
+        },
+        "HINTS": {
+          "Show HUD Prompts": null,
+          "Vehicle Control Hints": null,
+          "Vehicle Control Hints Size": null,
+          "Action Prompts": null
+        }
+      }
+    },
+    "ICONS & INDICATORS": {
+      "Icon Intensity": null,
+      "HUD Icons": {
+        "GENERAL": {
+          "Ping Hints": null
+        },
+        "AIM-BASED ICONS OPACITY": {
+          "Icons Opacity Peripheral Zone Size": null,
+          "Icons Opacity Scaling Center Scale": null,
+          "Icons Opacity Peripheral": null,
+          "Icons Opacity Central": null,
+          "Icons Opacity Peripheral Zone Size (Zoomed)": null,
+          "Icons Opacity Scaling Center Scale (Zoomed)": null,
+          "Icons Opacity Peripheral (Zoomed)": null,
+          "Icons Opacity Central (Zoomed)": null
+        },
+        "OBJECTIVE ICONS": {
+          "Objective Icons Scale": null,
+          "Objective Icons Opacity": null,
+          "Objective Icons Opacity (Zoomed)": null,
+          "Objective Icons Opacity (Occluded)": null
+        },
+        "FRIENDLY ICONS": {
+          "Friendly Icons Scale": null,
+          "Friendly Icons Opacity": null,
+          "Friendly Icons Opacity (Zoomed)": null,
+          "Friendly Revive Icons Scale": null,
+          "Friendly Revive Icons Opacity": null,
+          "Friendly Revive Icons Opacity (Zoomed)": null
+        },
+        "SQUAD ICONS": {
+          "Squad Icons Scale": null,
+          "Squad Icons Opacity": null,
+          "Squad Icons Opacity (Zoomed)": null,
+          "Squad Revive Icons Scale": null,
+          "Squad Revive Icons Opacity": null,
+          "Squad Revive Icons Opacity (Zoomed)": null
+        },
+        "ENEMY ICONS": {
+          "Enemy Icons Scale": null,
+          "Enemy Icons Opacity": null,
+          "Enemy Icons Opacity (Zoomed)": null
+        },
+        "NEUTRAL ICONS": {
+          "Neutral Icons Scale": null,
+          "Neutral Icons Opacity": null,
+          "Neutral Icons Opacity (Zoomed)": null
+        },
+        "PING MARKER ICONS": {
+          "Ping Marker Icons Scale": null,
+          "Ping Marker Icons Opacity": null,
+          "Ping Marker Icons Opacity (Zoomed)": null
+        }
+      },
+      "Crosshairs and Indicators": {
+        "CROSSHAIR": {
+          "Crosshair Opacity": null,
+          "Crosshair Intensity": null,
+          "Crosshair Color": null,
+          "Crosshair Thickness": null,
+          "Infantry Crosshair Projection": null
+        },
+        "HIT INDICATOR": {
+          "Hit Indicator Opacity": null,
+          "Hit Indicator Intensity": null,
+          "Hit Color": null,
+          "Headshot Color": null,
+          "Kill Color": null,
+          "Armor Soft Hit Color": null,
+          "Armor Hard Hit Color": null,
+          "Armor Broken Hit Indicator": null
+        },
+        "HIT INDICATOR NUMBERS": {
+          "Hit Indicator Number Enabled": null,
+          "Hit Indicator Number Opacity": null,
+          "Hit Indicator Number Size": null,
+          "Hit Indicator Number Horizontal Offset": null,
+          "Hit Indicator Number Vertical Offset": null
+        },
+        "DAMAGE INDICATOR": {
+          "Infantry Damage Color": null,
+          "Vehicle Damage Color": null
+        }
+      }
+    },
+    "CHAT": {
+      "Chat Visibility": null,
+      "Chat Settings": {
+        "Chat Visibility": null,
+        "Enable All Chat": null,
+        "Chat Channel Indicator": null,
+        "Chat Background Opacity": null,
+        "Chat Width": null,
+        "Chat Height": null,
+        "Chat Horizontal Position": null,
+        "Chat Vertical Position": null,
+        "Chat Scale": null
+      }
+    }
+  },
+  "AUDIO": {
+    "VOLUME": {
+      "Master Volume": null,
+      "Sound Effects Volume": null,
+      "Music Volume": null,
+      "Commander VO Volume": null,
+      "Soldier and Campaign VO": null,
+      "UI SFX Volume": null,
+      "Hit Indicator": null
+    },
+    "CONFIGURATION": {
+      "Sound System": null,
+      "Audio Mix": null,
+      "Audio in Background": null
+    },
+    "VOICE CHAT": {
+      "Enable Voice Chat": null,
+      "VOIP Stats": {
+        "Enable VOIP Stats": null,
+        "Background Opacity": null,
+        "Horizontal Position X": null,
+        "Vertical Position Y": null
+      }
+    },
+    "ACCESSIBILITY": {
+      "Stereo Balance": null,
+      "Tinnitus SFX Volume": null,
+      "Tinnitus Relief Frequency": null
+    },
+    "SUBTITLES": {
+      "Subtitles Settings": {
+        "Subtitles": null,
+        "Subtitle Text Size": null,
+        "Subtitle Outline": null,
+        "Subtitles Background Opacity": null,
+        "Subtitles Text Opacity": null,
+        "Instructor Subtitles": null,
+        "Squad Subtitles": null,
+        "Friendly Subtitles": null,
+        "Show Speaker Name in Subtitles": null
+      }
+    },
+    "MUSIC RADIOS": {
+      "Enable Radio Music": null,
+      "In-World Radio Volume": null,
+      "Driver Radio Volume": null,
+      "Passenger Radio Volume": null
+    }
+  },
+  "SYSTEM": {
+    "SETUP": {
+      "Install / Uninstall": null,
+      "Show Player Created Content": null,
+      "Command Console": null
+    },
+    "CREATOR": {
+      "Streamer Mode": null,
+      "Anonymous Mode": null,
+      "Enable Radio Music": null,
+      "Minimap": {
+        "Minimap Size": null,
+        "Minimap Background Opacity": null,
+        "Cone Opacity": null,
+        "Cone Edge Opacity": null,
+        "View Rotation": null,
+        "View Distance On Foot": null,
+        "View Distance In Ground Vehicle": null,
+        "View Distance In Air": null
+      }
+    },
+    "NETWORK": {
+      "Gameplay Data Sharing": null,
+      "Scoreboard Ping": null,
+      "VOIP Stats": {
+        "Enable VOIP Stats": null,
+        "Background Opacity": null,
+        "Horizontal Position X": null,
+        "Vertical Position Y": null
+      },
+      "Network Graph": {
+        "Network Widgets": null,
+        "Background Opacity": null,
+        "Horizontal Position": null,
+        "Vertical Position": null,
+        "Show Network Performance Bar": null,
+        "Show Network Performance Graphs": null,
+        "Show Damage Log": null,
+        "Show Event Graph": null
+      }
+    }
+  },
+  "EXTRAS": {
+    "HELP": {
+      "Need Help?": null
+    },
+    "LEGAL": {
+      "User Agreement": null,
+      "Privacy & Cookie Policy": null
+    },
+    "CREDITS": {
+      "Battlefield 6 Credits": null
+    }
+  }
+}
