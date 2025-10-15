@@ -1,10 +1,14 @@
-// --- 1. LOAD JSON VIA FETCH ---
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("BF6_SETTINGS.json") // Path to your JSON file (same repo / root folder)
-    .then((response) => response.json())
-    .then((settingsData) => {
-      // --- 2. CONTINUE WITH YOUR EXISTING LOGIC ---
-      console.log('Loaded settingsData:', settingsData); 
+  fetch("/bf6-settings-searcher/BF6_SETTINGS.json")
+    .then(response => {
+      console.log("Fetch Response Status:", response.status);
+      if (!response.ok) {
+        throw new Error(`HTTP Error: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(settingsData => {
+      console.log("Loaded settingsData:", settingsData); // should log your JSON
       // Flatten nested settings into a searchable list
       const flatSettings = flattenSettings(settingsData);
 
