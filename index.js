@@ -1,5 +1,6 @@
 let currentFullResults = [];
 let currentlyDisplayedCount = 0;
+const RESULTS_PER_PAGE = 20;
 
 document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("searchInput");
