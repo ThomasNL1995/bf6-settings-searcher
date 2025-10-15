@@ -1,14 +1,14 @@
 @font-face {
   font-family: "BF_HEADLINE_NARROW-BOLD"; /*a name to be used later*/
-  src: url("https://github.com/ThomasNL1995/bf6-settings-searcher/blob/main/BF_HEADLINE_NARROW-BOLD.ttf"); /*URL to font*/
+  src: url("BF_HEADLINE_NARROW-BOLD.ttf"); /*URL to font*/
 }
 @font-face {
   font-family: "BF_SUB_HEADLINE_BOLD"; /*a name to be used later*/
-  src: url("https://github.com/ThomasNL1995/bf6-settings-searcher/blob/main/BF_SUB_HEADLINE_BOLD.ttf"); /*URL to font*/
+  src: url("BF_SUB_HEADLINE_BOLD.ttf"); /*URL to font*/
 }
 @font-face {
   font-family: "BF_MONO_BOOK"; /*a name to be used later*/
-  src: url("https://github.com/ThomasNL1995/bf6-settings-searcher/blob/main/BF_MONO_BOOK.ttf"); /*URL to font*/
+  src: url("BF_MONO_BOOK.ttf"); /*URL to font*/
 }
 
 /* --- Basic Styling & Dark Theme --- */
