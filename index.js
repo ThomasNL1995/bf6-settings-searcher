@@ -30,11 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const resultsContainer = document.getElementById("resultsContainer");
       const filterContainer = document.getElementById("filterContainer");
 
-      const resetBtn = document.createElement("button");
-      resetBtn.id = "resetFiltersBtn";
-      resetBtn.textContent = "Reset Filters";
-      filterContainer.appendChild(resetBtn);
-
+      
       // Dynamically create filter checkboxes
       const mainTabs = Object.keys(settingsData);
       mainTabs.forEach((tab) => {
@@ -52,6 +48,11 @@ document.addEventListener("DOMContentLoaded", () => {
         filterContainer.appendChild(checkbox);
         filterContainer.appendChild(label);
       });
+
+      const resetBtn = document.createElement("button");
+      resetBtn.id = "resetFiltersBtn";
+      resetBtn.textContent = "Reset Filters";
+      filterContainer.appendChild(resetBtn);
 
       // Add Reset Filters button
       resetBtn.addEventListener("click", () => {
