@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((settingsData) => {
       // --- 2. CONTINUE WITH YOUR EXISTING LOGIC ---
-
+      console.log('Loaded settingsData:', settingsData); 
       // Flatten nested settings into a searchable list
       const flatSettings = flattenSettings(settingsData);
 
