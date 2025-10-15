@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   fetch("BF6_SETTINGS.json")
-    .then(response => {
+    .then((response) => {
       console.log("Fetch Response Status:", response.status);
       if (!response.ok) {
         throw new Error(`HTTP Error: ${response.status}`);
       }
       return response.json();
     })
-    .then(settingsData => {
+    .then((settingsData) => {
       console.log("Loaded settingsData:", settingsData); // should log your JSON
       // Flatten nested settings into a searchable list
       const flatSettings = flattenSettings(settingsData);
@@ -28,15 +28,39 @@ document.addEventListener("DOMContentLoaded", () => {
       const searchInput = document.getElementById("searchInput");
       const resultsContainer = document.getElementById("resultsContainer");
 
-      searchInput.addEventListener("input", () => {
-        const query = searchInput.value.trim();
-        if (query === "") {
-          resultsContainer.innerHTML = "";
+      function performSearch() {
+        const query = searchInput.value;
+
+        // Get selected filters
+        const checkedFilters = Array.from(
+          document.querySelectorAll(".filter-checkbox:checked")
+        ).map((cb) => cb.value);
+
+        if (query.trim() === "" && checkedFilters.length === 0) {
+          resultsContainer.innerHTML = ""; // Clear if no query and no filters
           return;
         }
-        const searchResults = fuse.search(query).map((res) => res.item);
-        displayResults(searchResults);
-      });
+
+        // Step 1: Perform fuzzy search
+        let searchResults =
+          query.trim() === ""
+            ? flatSettings.map((item) => ({ item })) // If no query, start with all settings
+            : fuse.search(query);
+
+        // Step 2: Apply filters if any are selected
+        let filteredResults = searchResults.map((result) => result.item);
+        if (checkedFilters.length > 0) {
+          filteredResults = filteredResults.filter((item) =>
+            checkedFilters.includes(item.tab)
+          );
+        }
+
+        displayResults(filteredResults);
+      }
+
+      // Trigger search on both input and filter changes
+      searchInput.addEventListener("input", performSearch);
+      filterContainer.addEventListener("change", performSearch);
     })
     .catch((error) => {
       console.error("Error loading settings.json:", error);
@@ -69,24 +93,32 @@ function flattenSettings(obj, path = [], flatList = []) {
   return flatList;
 }
 
-function displayResults(results) {
+function displayResults(results, maxResults = 20) {
   const resultsContainer = document.getElementById("resultsContainer");
   resultsContainer.innerHTML = "";
+
   if (results.length === 0) {
     resultsContainer.innerHTML =
       '<div class="result-item no-results">No settings found. Try a different search term.</div>';
     return;
   }
-  results.forEach((result, index) => {
+
+  // Only take up to maxResults
+  const limitedResults = results.slice(0, maxResults);
+
+  limitedResults.forEach((result, index) => {
     const pathParts = result.path.split(" > ");
     const settingName = pathParts.pop();
     const pathOnly = pathParts.join(" > ");
+
     const itemDiv = document.createElement("div");
     itemDiv.className = "result-item";
     itemDiv.style.animationDelay = `${index * 0.05}s`;
+
     const pathElement = document.createElement("span");
     pathElement.className = "result-path";
     pathElement.innerHTML = `${pathOnly} > <strong>${settingName}</strong>`;
+
     itemDiv.appendChild(pathElement);
     resultsContainer.appendChild(itemDiv);
   });

@@ -17,12 +17,13 @@
   --surface-color: #25282a;
   --primary-text: #e0e0e0;
   --secondary-text: #a0a0a0;
-  --accent-color: #0084ff;
+  --accent-color: #ff7b00;
   --border-color: #444;
 }
 
 body {
-  font-family: 'BF_MONO_BOOK', BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: "BF_MONO_BOOK", BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
   background-color: var(--bg-color);
   color: var(--primary-text);
   margin: 0;
@@ -34,6 +35,7 @@ body {
   max-width: 700px;
   margin: 40px auto;
   padding: 20px;
+  padding-top: 0;
 }
 
 h1 {
@@ -42,7 +44,8 @@ h1 {
   justify-content: center;
   gap: 15px;
   text-align: center;
-  font-family: 'BF_HEADLINE_NARROW-BOLD', BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: "BF_HEADLINE_NARROW-BOLD", BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
   color: var(--primary-text);
   font-weight: 500;
   margin-bottom: 30px;
@@ -74,6 +77,41 @@ h1 svg {
   box-shadow: 0 0 0 3px rgba(0, 132, 255, 0.25);
 }
 
+/* --- Filter Styling --- */
+#filterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.filter-label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 8px 14px;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  font-size: 13px;
+  color: var(--secondary-text);
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.filter-checkbox {
+  display: none; /* Hide the actual checkbox */
+}
+
+.filter-checkbox:checked + .filter-label {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
+  font-weight: 500;
+}
+
 /* --- Results Styling --- */
 #resultsContainer {
   margin-top: 20px;
@@ -103,7 +141,7 @@ h1 svg {
 
 .result-path {
   color: var(--secondary-text);
-  font-size: 14px;
+  font-size: 16px;
   display: block; /* Puts it on its own line */
 }
 
@@ -116,4 +154,10 @@ h1 svg {
   color: var(--secondary-text);
   text-align: center;
   padding: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .result-path {
+    font-size: 14px;
+  }
 }
