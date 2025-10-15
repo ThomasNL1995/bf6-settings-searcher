@@ -30,6 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const resultsContainer = document.getElementById("resultsContainer");
       const filterContainer = document.getElementById("filterContainer");
 
+      const resetBtn = document.createElement("button");
+      resetBtn.id = "resetFiltersBtn";
+      resetBtn.textContent = "Reset Filters";
+      filterContainer.appendChild(resetBtn);
+
       // Dynamically create filter checkboxes
       const mainTabs = Object.keys(settingsData);
       mainTabs.forEach((tab) => {
@@ -49,16 +54,12 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       // Add Reset Filters button
-      const resetBtn = document.createElement("button");
-      resetBtn.textContent = "Reset Filters";
-      resetBtn.className = "reset-button";
       resetBtn.addEventListener("click", () => {
-        document.querySelectorAll(".filter-checkbox").forEach(
-          (cb) => (cb.checked = false)
-        );
-        performSearch();
+        document
+          .querySelectorAll(".filter-checkbox")
+          .forEach((cb) => (cb.checked = false));
+        performSearch(); // refresh results after clearing filters
       });
-      filterContainer.appendChild(resetBtn);
 
       function performSearch() {
         const query = searchInput.value;
@@ -67,6 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const checkedFilters = Array.from(
           document.querySelectorAll(".filter-checkbox:checked")
         ).map((cb) => cb.value);
+
+        resetBtn.classList.toggle('visible', checkedFilters.length > 0);
 
         if (query.trim() === "" && checkedFilters.length === 0) {
           resultsContainer.innerHTML = ""; // Clear if no query and no filters

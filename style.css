@@ -112,6 +112,24 @@ h1 svg {
   font-weight: 500;
 }
 
+#resetFiltersBtn {
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 8px;
+  margin-left: auto; /* Pushes it to the far right */
+  display: none; /* Initially hidden */
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+#resetFiltersBtn.visible {
+  display: inline-block;
+  opacity: 1;
+}
+
 /* --- Results Styling --- */
 #resultsContainer {
   margin-top: 20px;
