@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("BF6_SETTINGS.json")
+  fetch("BF6_SETTINGS.json") // Keep your original relative path
     .then((response) => {
       console.log("Fetch Response Status:", response.status);
       if (!response.ok) {
@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.json();
     })
     .then((settingsData) => {
-      console.log("Loaded settingsData:", settingsData); // should log your JSON
+      console.log("Loaded settingsData:", settingsData);
+
       // Flatten nested settings into a searchable list
       const flatSettings = flattenSettings(settingsData);
 
@@ -47,6 +48,18 @@ document.addEventListener("DOMContentLoaded", () => {
         filterContainer.appendChild(label);
       });
 
+      // Add Reset Filters button
+      const resetBtn = document.createElement("button");
+      resetBtn.textContent = "Reset Filters";
+      resetBtn.className = "reset-button";
+      resetBtn.addEventListener("click", () => {
+        document.querySelectorAll(".filter-checkbox").forEach(
+          (cb) => (cb.checked = false)
+        );
+        performSearch();
+      });
+      filterContainer.appendChild(resetBtn);
+
       function performSearch() {
         const query = searchInput.value;
 
@@ -63,10 +76,10 @@ document.addEventListener("DOMContentLoaded", () => {
         // Step 1: Perform fuzzy search
         let searchResults =
           query.trim() === ""
-            ? flatSettings.map((item) => ({ item })) // If no query, start with all settings
+            ? flatSettings.map((item) => ({ item })) // All settings if no query
             : fuse.search(query);
 
-        // Step 2: Apply filters if any are selected
+        // Step 2: Apply filters
         let filteredResults = searchResults.map((result) => result.item);
         if (checkedFilters.length > 0) {
           filteredResults = filteredResults.filter((item) =>
@@ -77,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
         displayResults(filteredResults);
       }
 
-      // Trigger search on both input and filter changes
+      // Trigger search on input and filter changes
       searchInput.addEventListener("input", performSearch);
       filterContainer.addEventListener("change", performSearch);
     })
@@ -88,8 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// --- 3. YOUR EXISTING FUNCTIONS REMAIN UNCHANGED ---
-
+// Flatten settings and add `tab` for filtering
 function flattenSettings(obj, path = [], flatList = []) {
   for (const key of Object.keys(obj)) {
     const newPath = [...path, key];
@@ -106,12 +118,14 @@ function flattenSettings(obj, path = [], flatList = []) {
         path: newPath.join(" > "),
         settingName: settingName,
         pathOnly: pathOnly,
+        tab: path[0] || null, // main category for filtering
       });
     }
   }
   return flatList;
 }
 
+// Display search results with maxResults default 20
 function displayResults(results, maxResults = 20) {
   const resultsContainer = document.getElementById("resultsContainer");
   resultsContainer.innerHTML = "";
@@ -122,7 +136,6 @@ function displayResults(results, maxResults = 20) {
     return;
   }
 
-  // Only take up to maxResults
   const limitedResults = results.slice(0, maxResults);
 
   limitedResults.forEach((result, index) => {
