@@ -49,7 +49,6 @@ h1 {
     sans-serif;
   color: var(--primary-text);
   font-weight: 500;
-  margin-bottom: 30px;
 }
 
 h1 svg {
@@ -198,22 +197,28 @@ h1 svg {
 }
 
 @media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 29px;
+  }
   .result-path {
     font-size: 14px;
+  }
+  .filter-label {
+    padding: 5px 14px;
   }
   #filterToggleButton {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-color: var(--surface-color);
+    background-color: var(--bg-color);
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    padding: 12px 15px;
+    padding: 5px 15px;
     color: var(--primary-text);
     font-size: 15px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   #filterToggleButton svg {
     width: 20px;
