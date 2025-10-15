@@ -1,6 +1,6 @@
 // --- 1. LOAD JSON VIA FETCH ---
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("settings.json") // Path to your JSON file (same repo / root folder)
+  fetch("https://github.com/ThomasNL1995/bf6-settings-searcher/blob/main/BF6_SETTINGS.json") // Path to your JSON file (same repo / root folder)
     .then((response) => response.json())
     .then((settingsData) => {
       // --- 2. CONTINUE WITH YOUR EXISTING LOGIC ---
