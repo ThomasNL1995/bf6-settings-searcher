@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("/bf6-settings-searcher/BF6_SETTINGS.json")
+  fetch("https://raw.githubusercontent.com/ThomasNL1995/bf6-settings-searcher/refs/heads/main/BF6_SETTINGS.json")
     .then(response => {
       console.log("Fetch Response Status:", response.status);
       if (!response.ok) {
