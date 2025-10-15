@@ -1,12 +1,11 @@
+let currentFullResults = [];
+let currentlyDisplayedCount = 0;
+
 document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("searchInput");
   const resultsContainer = document.getElementById("resultsContainer");
   const filterContainer = document.getElementById("filterContainer");
   const loadMoreBtn = document.getElementById("loadMoreBtn");
-
-  let currentFullResults = [];
-  let currentlyDisplayedCount = 0;
-  const RESULTS_PER_PAGE = 20;
 
   fetch("BF6_SETTINGS.json") // Keep your original relative path
     .then((response) => {
@@ -17,8 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.json();
     })
     .then((settingsData) => {
-
-
       console.log("Loaded settingsData:", settingsData);
 
       // Flatten nested settings into a searchable list
