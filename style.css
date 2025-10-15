@@ -1,12 +1,119 @@
 @font-face {
-    font-family: 'YourFontName'; /*a name to be used later*/
-    src: url('http://domain.example/fonts/font.ttf'); /*URL to font*/
+  font-family: "BF_HEADLINE_NARROW-BOLD"; /*a name to be used later*/
+  src: url("https://github.com/ThomasNL1995/bf6-settings-searcher/blob/main/BF_HEADLINE_NARROW-BOLD.ttf"); /*URL to font*/
 }
 @font-face {
-    font-family: 'YourFontName'; /*a name to be used later*/
-    src: url('http://domain.example/fonts/font.ttf'); /*URL to font*/
+  font-family: "BF_SUB_HEADLINE_BOLD"; /*a name to be used later*/
+  src: url("https://github.com/ThomasNL1995/bf6-settings-searcher/blob/main/BF_SUB_HEADLINE_BOLD.ttf"); /*URL to font*/
 }
 @font-face {
-    font-family: 'YourFontName'; /*a name to be used later*/
-    src: url('http://domain.example/fonts/font.ttf'); /*URL to font*/
+  font-family: "BF_MONO_BOOK"; /*a name to be used later*/
+  src: url("https://github.com/ThomasNL1995/bf6-settings-searcher/blob/main/BF_MONO_BOOK.ttf"); /*URL to font*/
+}
+
+/* --- Basic Styling & Dark Theme --- */
+:root {
+  --bg-color: #181a1b;
+  --surface-color: #25282a;
+  --primary-text: #e0e0e0;
+  --secondary-text: #a0a0a0;
+  --accent-color: #0084ff;
+  --border-color: #444;
+}
+
+body {
+  font-family: 'BF_MONO_BOOK', BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--primary-text);
+  margin: 0;
+  padding: 20px;
+}
+
+/* --- Main App Container --- */
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+  font-family: 'BF_HEADLINE_NARROW-BOLD', BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--primary-text);
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+h1 svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--secondary-text);
+}
+
+/* --- Search Input Field --- */
+#searchInput {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--primary-text);
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#searchInput:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(0, 132, 255, 0.25);
+}
+
+/* --- Results Styling --- */
+#resultsContainer {
+  margin-top: 20px;
+}
+
+.result-item {
+  background-color: var(--surface-color);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 3px solid var(--accent-color);
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.result-item:empty {
+  display: none;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-path {
+  color: var(--secondary-text);
+  font-size: 14px;
+  display: block; /* Puts it on its own line */
+}
+
+.result-path strong {
+  color: var(--primary-text);
+  font-weight: 600;
+}
+
+.no-results {
+  color: var(--secondary-text);
+  text-align: center;
+  padding: 20px;
 }

@@ -1,134 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Battlefield Settings Search</title>
     <!-- The Fuse.js library is included here from a CDN -->
     <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
-
-    <style>
-        /* --- Basic Styling & Dark Theme --- */
-        :root {
-            --bg-color: #181a1b;
-            --surface-color: #25282a;
-            --primary-text: #e0e0e0;
-            --secondary-text: #a0a0a0;
-            --accent-color: #0084ff;
-            --border-color: #444;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--primary-text);
-            margin: 0;
-            padding: 20px;
-        }
-
-        /* --- Main App Container --- */
-        .container {
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        h1 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            text-align: center;
-            color: var(--primary-text);
-            font-weight: 500;
-            margin-bottom: 30px;
-        }
-        
-        h1 svg {
-            width: 32px;
-            height: 32px;
-            fill: var(--secondary-text);
-        }
-
-        /* --- Search Input Field --- */
-        #searchInput {
-            width: 100%;
-            padding: 14px 18px;
-            margin-bottom: 20px;
-            background-color: var(--surface-color);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            color: var(--primary-text);
-            font-size: 16px;
-            outline: none;
-            box-sizing: border-box; /* Ensures padding doesn't affect width */
-            transition: border-color 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        #searchInput:focus {
-            border-color: var(--accent-color);
-            box-shadow: 0 0 0 3px rgba(0, 132, 255, 0.25);
-        }
-
-        /* --- Results Styling --- */
-        #resultsContainer {
-            margin-top: 20px;
-        }
-
-        .result-item {
-            background-color: var(--surface-color);
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            border-left: 3px solid var(--accent-color);
-            opacity: 0;
-            transform: translateY(10px);
-            animation: fadeIn 0.3s ease forwards;
-        }
-        
-        .result-item:empty {
-            display: none;
-        }
-
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .result-path {
-            color: var(--secondary-text);
-            font-size: 14px;
-            display: block; /* Puts it on its own line */
-        }
-        
-        .result-path strong {
-             color: var(--primary-text);
-             font-weight: 600;
-        }
-        
-        .no-results {
-            color: var(--secondary-text);
-            text-align: center;
-            padding: 20px;
-        }
-
-    </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
-        <h1>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.25 2C15.5168 2 19 5.48322 19 9.75C19 11.5941 18.3394 13.2843 17.2284 14.6253L21.7071 19.104C22.0976 19.4945 22.0976 20.1277 21.7071 20.5182C21.3166 20.9087 20.6834 20.9087 20.2929 20.5182L15.8142 16.0395C14.4732 17.1502 12.7831 17.8108 11.25 17.8108C6.98322 17.8108 3.5 14.3276 3.5 10.0608C3.5 5.79401 6.98322 2.31079 11.25 2.31079V2ZM11.25 4.31079C8.08781 4.31079 5.5 6.8986 5.5 10.0608C5.5 13.223 8.08781 15.8108 11.25 15.8108C14.4122 15.8108 17 13.223 17 10.0608C17 6.8986 14.4122 4.31079 11.25 4.31079Z"></path></svg>
-            <span>Search Battlefield Settings</span>
-        </h1>
-        <input type="text" id="searchInput" placeholder="Search for 'fov' or 'controller vehicle seat'..." autofocus>
-        <div id="resultsContainer"></div>
+      <h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M11.25 2C15.5168 2 19 5.48322 19 9.75C19 11.5941 18.3394 13.2843 17.2284 14.6253L21.7071 19.104C22.0976 19.4945 22.0976 20.1277 21.7071 20.5182C21.3166 20.9087 20.6834 20.9087 20.2929 20.5182L15.8142 16.0395C14.4732 17.1502 12.7831 17.8108 11.25 17.8108C6.98322 17.8108 3.5 14.3276 3.5 10.0608C3.5 5.79401 6.98322 2.31079 11.25 2.31079V2ZM11.25 4.31079C8.08781 4.31079 5.5 6.8986 5.5 10.0608C5.5 13.223 8.08781 15.8108 11.25 15.8108C14.4122 15.8108 17 13.223 17 10.0608C17 6.8986 14.4122 4.31079 11.25 4.31079Z"
+          ></path>
+        </svg>
+        <span>Search Battlefield Settings</span>
+      </h1>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for 'fov' or 'controller vehicle seat'..."
+        autofocus
+      />
+      <div id="resultsContainer"></div>
     </div>
-
-    
-
-    </script>
-</body>
+  </body>
 </html>
