@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.getElementById("searchInput");
+  const resultsContainer = document.getElementById("resultsContainer");
+  const filterContainer = document.getElementById("filterContainer");
+  const loadMoreBtn = document.getElementById("loadMoreBtn");
+
+  let currentFullResults = [];
+  let currentlyDisplayedCount = 0;
+  const RESULTS_PER_PAGE = 20;
+
   fetch("BF6_SETTINGS.json") // Keep your original relative path
     .then((response) => {
       console.log("Fetch Response Status:", response.status);
@@ -8,6 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return response.json();
     })
     .then((settingsData) => {
+
+
       console.log("Loaded settingsData:", settingsData);
 
       // Flatten nested settings into a searchable list
@@ -26,11 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const fuse = new Fuse(flatSettings, fuseOptions);
 
-      const searchInput = document.getElementById("searchInput");
-      const resultsContainer = document.getElementById("resultsContainer");
-      const filterContainer = document.getElementById("filterContainer");
-
-      
       // Dynamically create filter checkboxes
       const mainTabs = Object.keys(settingsData);
       mainTabs.forEach((tab) => {
@@ -64,39 +70,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
       function performSearch() {
         const query = searchInput.value;
-
-        // Get selected filters
         const checkedFilters = Array.from(
           document.querySelectorAll(".filter-checkbox:checked")
-        ).map((cb) => cb.value);
+        );
+        const selectedFilterValues = checkedFilters.map((cb) => cb.value);
 
-        resetBtn.classList.toggle('visible', checkedFilters.length > 0);
+        resetBtn.classList.toggle("visible", checkedFilters.length > 0);
 
-        if (query.trim() === "" && checkedFilters.length === 0) {
-          resultsContainer.innerHTML = ""; // Clear if no query and no filters
+        resultsContainer.innerHTML = ""; // Clear container for new search
+        currentlyDisplayedCount = 0; // Reset display count
+
+        if (query.trim() === "" && selectedFilterValues.length === 0) {
+          document.getElementById("loadMoreContainer").style.display = "none";
           return;
         }
 
-        // Step 1: Perform fuzzy search
         let searchResults =
           query.trim() === ""
-            ? flatSettings.map((item) => ({ item })) // All settings if no query
+            ? flatSettings.map((item) => ({ item }))
             : fuse.search(query);
 
-        // Step 2: Apply filters
         let filteredResults = searchResults.map((result) => result.item);
-        if (checkedFilters.length > 0) {
+        if (selectedFilterValues.length > 0) {
           filteredResults = filteredResults.filter((item) =>
-            checkedFilters.includes(item.tab)
+            selectedFilterValues.includes(item.tab)
           );
         }
 
-        displayResults(filteredResults);
+        currentFullResults = filteredResults; // Store all results
+
+        if (currentFullResults.length === 0) {
+          resultsContainer.innerHTML =
+            '<div class="result-item no-results">No settings found. Adjust your search or filters.</div>';
+          document.getElementById("loadMoreContainer").style.display = "none";
+        } else {
+          handleLoadMore(); // Display the first batch
+        }
       }
 
       // Trigger search on input and filter changes
       searchInput.addEventListener("input", performSearch);
       filterContainer.addEventListener("change", performSearch);
+      loadMoreBtn.addEventListener("click", handleLoadMore);
     })
     .catch((error) => {
       console.error("Error loading settings.json:", error);
@@ -127,6 +142,44 @@ function flattenSettings(obj, path = [], flatList = []) {
     }
   }
   return flatList;
+}
+function appendResults(results) {
+  const resultsContainer = document.getElementById("resultsContainer");
+
+  results.forEach((result) => {
+    const pathParts = result.path.split(" > ");
+    const settingName = pathParts.pop();
+    const pathOnly = pathParts.join(" > ");
+
+    const itemDiv = document.createElement("div");
+    itemDiv.className = "result-item";
+    // Animation delay is based on total displayed count for smooth loading
+    itemDiv.style.animationDelay = `${(currentlyDisplayedCount + 1) * 0.03}s`;
+
+    const pathElement = document.createElement("span");
+    pathElement.className = "result-path";
+    pathElement.innerHTML = `${pathOnly} > <strong>${settingName}</strong>`;
+
+    itemDiv.appendChild(pathElement);
+    resultsContainer.appendChild(itemDiv);
+  });
+}
+
+function handleLoadMore() {
+  const loadMoreContainer = document.getElementById("loadMoreContainer");
+  const resultsToDisplay = currentFullResults.slice(
+    currentlyDisplayedCount,
+    currentlyDisplayedCount + RESULTS_PER_PAGE
+  );
+
+  appendResults(resultsToDisplay);
+  currentlyDisplayedCount += resultsToDisplay.length;
+
+  if (currentlyDisplayedCount < currentFullResults.length) {
+    loadMoreContainer.style.display = "block";
+  } else {
+    loadMoreContainer.style.display = "none";
+  }
 }
 
 // Display search results with maxResults default 20
