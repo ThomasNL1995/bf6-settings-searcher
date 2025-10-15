@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultsContainer = document.getElementById("resultsContainer");
   const filterContainer = document.getElementById("filterContainer");
   const loadMoreBtn = document.getElementById("loadMoreBtn");
+  const filterToggleButton = document.getElementById("filterToggleButton");
 
   fetch("BF6_SETTINGS.json") // Keep your original relative path
     .then((response) => {
@@ -110,6 +111,11 @@ document.addEventListener("DOMContentLoaded", () => {
       searchInput.addEventListener("input", performSearch);
       filterContainer.addEventListener("change", performSearch);
       loadMoreBtn.addEventListener("click", handleLoadMore);
+
+      filterToggleButton.addEventListener("click", () => {
+        filterContainer.classList.toggle("open");
+        filterToggleButton.classList.toggle("open");
+      });
     })
     .catch((error) => {
       console.error("Error loading settings.json:", error);

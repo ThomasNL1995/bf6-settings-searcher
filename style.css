@@ -201,4 +201,45 @@ h1 svg {
   .result-path {
     font-size: 14px;
   }
+  #filterToggleButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px 15px;
+    color: var(--primary-text);
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  #filterToggleButton svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--secondary-text);
+    transition: transform 0.3s ease;
+  }
+
+  #filterToggleButton.open svg {
+    transform: rotate(180deg);
+  }
+
+  #filterContainer {
+    max-height: 0;
+    overflow: hidden;
+    padding-bottom: 0;
+    margin-top: 0;
+    border-bottom: none;
+    transition: max-height 0.3s ease-out, margin-top 0.3s ease-out,
+      padding-bottom 0.3s ease-out;
+  }
+
+  #filterContainer.open {
+    max-height: 500px; /* Adjust if more filters are added */
+    margin-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+  }
 }
